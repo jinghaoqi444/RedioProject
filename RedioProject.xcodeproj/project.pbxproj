@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		961BB5661C390F59004D1805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5651C390F59004D1805 /* main.m */; };
+		961BB5691C390F59004D1805 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5681C390F59004D1805 /* AppDelegate.m */; };
+		961BB56C1C390F59004D1805 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB56B1C390F59004D1805 /* ViewController.m */; };
+		961BB56F1C390F59004D1805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961BB56D1C390F59004D1805 /* Main.storyboard */; };
+		961BB5711C390F59004D1805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961BB5701C390F59004D1805 /* Assets.xcassets */; };
+		961BB5741C390F59004D1805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961BB5721C390F59004D1805 /* LaunchScreen.storyboard */; };
+		961BB57F1C390F59004D1805 /* RedioProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB57E1C390F59004D1805 /* RedioProjectTests.m */; };
+		961BB58A1C390F59004D1805 /* RedioProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5891C390F59004D1805 /* RedioProjectUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		961BB57B1C390F59004D1805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 961BB5591C390F59004D1805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961BB5601C390F59004D1805;
+			remoteInfo = RedioProject;
+		};
+		961BB5861C390F59004D1805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 961BB5591C390F59004D1805 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961BB5601C390F59004D1805;
+			remoteInfo = RedioProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		961BB5611C390F59004D1805 /* RedioProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedioProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		961BB5651C390F59004D1805 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		961BB5671C390F59004D1805 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		961BB5681C390F59004D1805 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		961BB56A1C390F59004D1805 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		961BB56B1C390F59004D1805 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		961BB56E1C390F59004D1805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		961BB5701C390F59004D1805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		961BB5731C390F59004D1805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		961BB5751C390F59004D1805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961BB57A1C390F59004D1805 /* RedioProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedioProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961BB57E1C390F59004D1805 /* RedioProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedioProjectTests.m; sourceTree = "<group>"; };
+		961BB5801C390F59004D1805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961BB5851C390F59004D1805 /* RedioProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedioProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961BB5891C390F59004D1805 /* RedioProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedioProjectUITests.m; sourceTree = "<group>"; };
+		961BB58B1C390F59004D1805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		961BB55E1C390F59004D1805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961BB5771C390F59004D1805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961BB5821C390F59004D1805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		961BB5581C390F59004D1805 = {
+			isa = PBXGroup;
+			children = (
+				961BB5631C390F59004D1805 /* RedioProject */,
+				961BB57D1C390F59004D1805 /* RedioProjectTests */,
+				961BB5881C390F59004D1805 /* RedioProjectUITests */,
+				961BB5621C390F59004D1805 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		961BB5621C390F59004D1805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5611C390F59004D1805 /* RedioProject.app */,
+				961BB57A1C390F59004D1805 /* RedioProjectTests.xctest */,
+				961BB5851C390F59004D1805 /* RedioProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		961BB5631C390F59004D1805 /* RedioProject */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5671C390F59004D1805 /* AppDelegate.h */,
+				961BB5681C390F59004D1805 /* AppDelegate.m */,
+				961BB56A1C390F59004D1805 /* ViewController.h */,
+				961BB56B1C390F59004D1805 /* ViewController.m */,
+				961BB56D1C390F59004D1805 /* Main.storyboard */,
+				961BB5701C390F59004D1805 /* Assets.xcassets */,
+				961BB5721C390F59004D1805 /* LaunchScreen.storyboard */,
+				961BB5751C390F59004D1805 /* Info.plist */,
+				961BB5641C390F59004D1805 /* Supporting Files */,
+			);
+			path = RedioProject;
+			sourceTree = "<group>";
+		};
+		961BB5641C390F59004D1805 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5651C390F59004D1805 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		961BB57D1C390F59004D1805 /* RedioProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				961BB57E1C390F59004D1805 /* RedioProjectTests.m */,
+				961BB5801C390F59004D1805 /* Info.plist */,
+			);
+			path = RedioProjectTests;
+			sourceTree = "<group>";
+		};
+		961BB5881C390F59004D1805 /* RedioProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5891C390F59004D1805 /* RedioProjectUITests.m */,
+				961BB58B1C390F59004D1805 /* Info.plist */,
+			);
+			path = RedioProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		961BB5601C390F59004D1805 /* RedioProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961BB58E1C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProject" */;
+			buildPhases = (
+				961BB55D1C390F59004D1805 /* Sources */,
+				961BB55E1C390F59004D1805 /* Frameworks */,
+				961BB55F1C390F59004D1805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedioProject;
+			productName = RedioProject;
+			productReference = 961BB5611C390F59004D1805 /* RedioProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		961BB5791C390F59004D1805 /* RedioProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961BB5911C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProjectTests" */;
+			buildPhases = (
+				961BB5761C390F59004D1805 /* Sources */,
+				961BB5771C390F59004D1805 /* Frameworks */,
+				961BB5781C390F59004D1805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				961BB57C1C390F59004D1805 /* PBXTargetDependency */,
+			);
+			name = RedioProjectTests;
+			productName = RedioProjectTests;
+			productReference = 961BB57A1C390F59004D1805 /* RedioProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		961BB5841C390F59004D1805 /* RedioProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961BB5941C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProjectUITests" */;
+			buildPhases = (
+				961BB5811C390F59004D1805 /* Sources */,
+				961BB5821C390F59004D1805 /* Frameworks */,
+				961BB5831C390F59004D1805 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				961BB5871C390F59004D1805 /* PBXTargetDependency */,
+			);
+			name = RedioProjectUITests;
+			productName = RedioProjectUITests;
+			productReference = 961BB5851C390F59004D1805 /* RedioProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		961BB5591C390F59004D1805 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = garin;
+				TargetAttributes = {
+					961BB5601C390F59004D1805 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					961BB5791C390F59004D1805 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 961BB5601C390F59004D1805;
+					};
+					961BB5841C390F59004D1805 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 961BB5601C390F59004D1805;
+					};
+				};
+			};
+			buildConfigurationList = 961BB55C1C390F59004D1805 /* Build configuration list for PBXProject "RedioProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 961BB5581C390F59004D1805;
+			productRefGroup = 961BB5621C390F59004D1805 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				961BB5601C390F59004D1805 /* RedioProject */,
+				961BB5791C390F59004D1805 /* RedioProjectTests */,
+				961BB5841C390F59004D1805 /* RedioProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		961BB55F1C390F59004D1805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961BB5741C390F59004D1805 /* LaunchScreen.storyboard in Resources */,
+				961BB5711C390F59004D1805 /* Assets.xcassets in Resources */,
+				961BB56F1C390F59004D1805 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961BB5781C390F59004D1805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961BB5831C390F59004D1805 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		961BB55D1C390F59004D1805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961BB56C1C390F59004D1805 /* ViewController.m in Sources */,
+				961BB5691C390F59004D1805 /* AppDelegate.m in Sources */,
+				961BB5661C390F59004D1805 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961BB5761C390F59004D1805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961BB57F1C390F59004D1805 /* RedioProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961BB5811C390F59004D1805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961BB58A1C390F59004D1805 /* RedioProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		961BB57C1C390F59004D1805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 961BB5601C390F59004D1805 /* RedioProject */;
+			targetProxy = 961BB57B1C390F59004D1805 /* PBXContainerItemProxy */;
+		};
+		961BB5871C390F59004D1805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 961BB5601C390F59004D1805 /* RedioProject */;
+			targetProxy = 961BB5861C390F59004D1805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		961BB56D1C390F59004D1805 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				961BB56E1C390F59004D1805 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		961BB5721C390F59004D1805 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				961BB5731C390F59004D1805 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		961BB58C1C390F59004D1805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		961BB58D1C390F59004D1805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		961BB58F1C390F59004D1805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedioProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ha.RedioProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		961BB5901C390F59004D1805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedioProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ha.RedioProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		961BB5921C390F59004D1805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedioProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ha.RedioProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedioProject.app/RedioProject";
+			};
+			name = Debug;
+		};
+		961BB5931C390F59004D1805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RedioProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ha.RedioProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedioProject.app/RedioProject";
+			};
+			name = Release;
+		};
+		961BB5951C390F59004D1805 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RedioProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ha.RedioProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RedioProject;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		961BB5961C390F59004D1805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RedioProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ha.RedioProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RedioProject;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		961BB55C1C390F59004D1805 /* Build configuration list for PBXProject "RedioProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961BB58C1C390F59004D1805 /* Debug */,
+				961BB58D1C390F59004D1805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		961BB58E1C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961BB58F1C390F59004D1805 /* Debug */,
+				961BB5901C390F59004D1805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		961BB5911C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961BB5921C390F59004D1805 /* Debug */,
+				961BB5931C390F59004D1805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		961BB5941C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961BB5951C390F59004D1805 /* Debug */,
+				961BB5961C390F59004D1805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 961BB5591C390F59004D1805 /* Project object */;
+}
