@@ -7,8 +7,9 @@
 //
 
 #import "FindViewController.h"
+#import "MoreTableViewCell.h"
 
-@interface FindViewController ()
+@interface FindViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -57,19 +58,53 @@
     anchorLabel.backgroundColor = [UIColor blackColor];
     [titleSubView addSubview:anchorLabel];
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(titleSubView.frame),self.view.frame.size.width, self.view.frame.size.height - 64 - titleSubView.frame.size.height)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(titleSubView.frame),self.view.frame.size.width, self.view.frame.size.height - 64 - titleSubView.frame.size.height - 48)];
     [self.view addSubview:scrollView];
     scrollView.backgroundColor = [UIColor grayColor];
-    scrollView.contentSize = CGSizeMake(self.view.frame.size.width* 10, self.view.frame.size.height *2);
+    scrollView.contentSize = CGSizeMake(self.view.frame.size.width* 10, 0);
     scrollView.userInteractionEnabled = YES;
     scrollView.bounces = NO;
     
-    UIScrollView *titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,titleSubView.frame.size.width, 150)];
-    titleScrollView.backgroundColor = [UIColor whiteColor];
-    titleScrollView.contentSize = CGSizeMake(titleScrollView.frame.size.width *9, 0);
-    titleScrollView.userInteractionEnabled = YES;
-    titleScrollView.bounces = NO;
-    [scrollView addSubview:titleScrollView];
+    UITableView *groomTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,self.view.frame.size.width,scrollView.frame.size.height) style:UITableViewStyleGrouped];
+    groomTableView.backgroundColor = [UIColor whiteColor];
+    [scrollView addSubview:groomTableView];
+    groomTableView.delegate = self;
+    groomTableView.dataSource = self;
+    [groomTableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"MoreCell"];
+    
+    
+//    UIScrollView *titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,titleSubView.frame.size.width, 150)];
+//    titleScrollView.backgroundColor = [UIColor whiteColor];
+//    titleScrollView.contentSize = CGSizeMake(titleScrollView.frame.size.width *9, 0);
+//    titleScrollView.userInteractionEnabled = YES;
+//    titleScrollView.bounces = NO;
+//    [scrollView addSubview:titleScrollView];
+}
+
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 17;
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (section ==2) {
+        return 2;
+    }
+    if (section == 3) {
+        return 4;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MoreTableViewCell *moreCell = [tableView dequeueReusableCellWithIdentifier:@"MoreCell" forIndexPath:indexPath];
+    moreCell.backgroundColor = [UIColor redColor];
+    return moreCell;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,6 +20,7 @@
 		961BB5B91C391266004D1805 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5B81C391266004D1805 /* DownloadViewController.m */; };
 		961BB5BC1C391277004D1805 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5BB1C391277004D1805 /* LoginViewController.m */; };
 		961BB5BF1C3912BF004D1805 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5BE1C3912BF004D1805 /* CustomViewController.m */; };
+		961C7BC21C3927A900A59D5F /* MoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 961C7BC11C3927A900A59D5F /* MoreTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		961BB5BB1C391277004D1805 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		961BB5BD1C3912BF004D1805 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		961BB5BE1C3912BF004D1805 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		961C7BC01C3927A900A59D5F /* MoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreTableViewCell.h; path = RedioProject/Find/Views/MoreTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		961C7BC11C3927A900A59D5F /* MoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreTableViewCell.m; path = RedioProject/Find/Views/MoreTableViewCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +258,8 @@
 		961BB5A41C3910D7004D1805 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				961C7BC01C3927A900A59D5F /* MoreTableViewCell.h */,
+				961C7BC11C3927A900A59D5F /* MoreTableViewCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				961BB56C1C390F59004D1805 /* ViewController.m in Sources */,
 				961BB5B91C391266004D1805 /* DownloadViewController.m in Sources */,
 				961BB5BF1C3912BF004D1805 /* CustomViewController.m in Sources */,
+				961C7BC21C3927A900A59D5F /* MoreTableViewCell.m in Sources */,
 				961BB5691C390F59004D1805 /* AppDelegate.m in Sources */,
 				961BB5661C390F59004D1805 /* main.m in Sources */,
 				961BB5B61C391258004D1805 /* PlayViewController.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  FindViewController.h
+//  MoreTableViewCell.h
 //  RedioProject
 //
 //  Created by garin on 16/1/3.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FindViewController : UIViewController
+@interface MoreTableViewCell : UITableViewCell
 
 @end
