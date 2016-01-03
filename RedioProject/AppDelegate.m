@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "FindViewController.h"
+#import "CustomViewController.h"
+#import "PlayViewController.h"
+#import "DownloadViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    FindViewController *findVC = [[FindViewController alloc] init];
+    CustomViewController *customVC = [[CustomViewController alloc] init];
+    PlayViewController *playVC = [[PlayViewController alloc] init];
+    DownloadViewController *downVC = [[DownloadViewController alloc] init];
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:findVC];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:customVC];
+    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:playVC];
+    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:downVC];
+    UINavigationController *nav5 = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    
+    nav1.title = @"发现";
+    nav2.title = @"定制听";
+    nav3.title = @"播放";
+    nav4.title = @"下载听";
+    nav5.title = @"我的";
+    
+    self.window.rootViewController = tabBar;
+    NSArray *arr = [NSArray arrayWithObjects:nav1,nav2,nav3,nav4,nav5,nil];
+    tabBar.viewControllers = arr;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

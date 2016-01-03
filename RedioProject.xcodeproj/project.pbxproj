@@ -15,6 +15,11 @@
 		961BB5741C390F59004D1805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961BB5721C390F59004D1805 /* LaunchScreen.storyboard */; };
 		961BB57F1C390F59004D1805 /* RedioProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB57E1C390F59004D1805 /* RedioProjectTests.m */; };
 		961BB58A1C390F59004D1805 /* RedioProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5891C390F59004D1805 /* RedioProjectUITests.m */; };
+		961BB5B01C391153004D1805 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5AF1C391153004D1805 /* FindViewController.m */; };
+		961BB5B61C391258004D1805 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5B51C391258004D1805 /* PlayViewController.m */; };
+		961BB5B91C391266004D1805 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5B81C391266004D1805 /* DownloadViewController.m */; };
+		961BB5BC1C391277004D1805 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5BB1C391277004D1805 /* LoginViewController.m */; };
+		961BB5BF1C3912BF004D1805 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BB5BE1C3912BF004D1805 /* CustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		961BB5851C390F59004D1805 /* RedioProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedioProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		961BB5891C390F59004D1805 /* RedioProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedioProjectUITests.m; sourceTree = "<group>"; };
 		961BB58B1C390F59004D1805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961BB5AE1C391153004D1805 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		961BB5AF1C391153004D1805 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		961BB5B41C391258004D1805 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		961BB5B51C391258004D1805 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		961BB5B71C391266004D1805 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		961BB5B81C391266004D1805 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		961BB5BA1C391277004D1805 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		961BB5BB1C391277004D1805 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		961BB5BD1C3912BF004D1805 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		961BB5BE1C3912BF004D1805 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,11 @@
 		961BB5631C390F59004D1805 /* RedioProject */ = {
 			isa = PBXGroup;
 			children = (
+				961BB59F1C3910D7004D1805 /* Find */,
+				961BB5971C3910D7004D1805 /* Custom */,
+				961BB5A91C3910D7004D1805 /* Play */,
+				961BB59B1C3910D7004D1805 /* Download */,
+				961BB5A51C3910D7004D1805 /* Login */,
 				961BB5671C390F59004D1805 /* AppDelegate.h */,
 				961BB5681C390F59004D1805 /* AppDelegate.m */,
 				961BB56A1C390F59004D1805 /* ViewController.h */,
@@ -138,6 +158,171 @@
 				961BB58B1C390F59004D1805 /* Info.plist */,
 			);
 			path = RedioProjectUITests;
+			sourceTree = "<group>";
+		};
+		961BB5971C3910D7004D1805 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5981C3910D7004D1805 /* Common */,
+				961BB5991C3910D7004D1805 /* ViewController */,
+				961BB59A1C3910D7004D1805 /* views */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		961BB5981C3910D7004D1805 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		961BB5991C3910D7004D1805 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5BD1C3912BF004D1805 /* CustomViewController.h */,
+				961BB5BE1C3912BF004D1805 /* CustomViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		961BB59A1C3910D7004D1805 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		961BB59B1C3910D7004D1805 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				961BB59C1C3910D7004D1805 /* Common */,
+				961BB59D1C3910D7004D1805 /* ViewController */,
+				961BB59E1C3910D7004D1805 /* views */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		961BB59C1C3910D7004D1805 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		961BB59D1C3910D7004D1805 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5B71C391266004D1805 /* DownloadViewController.h */,
+				961BB5B81C391266004D1805 /* DownloadViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		961BB59E1C3910D7004D1805 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		961BB59F1C3910D7004D1805 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5A01C3910D7004D1805 /* Common */,
+				961BB5A11C3910D7004D1805 /* ViewController */,
+				961BB5A41C3910D7004D1805 /* views */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		961BB5A01C3910D7004D1805 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		961BB5A11C3910D7004D1805 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5AE1C391153004D1805 /* FindViewController.h */,
+				961BB5AF1C391153004D1805 /* FindViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		961BB5A41C3910D7004D1805 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		961BB5A51C3910D7004D1805 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5A61C3910D7004D1805 /* Common */,
+				961BB5A71C3910D7004D1805 /* ViewController */,
+				961BB5A81C3910D7004D1805 /* views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		961BB5A61C3910D7004D1805 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		961BB5A71C3910D7004D1805 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5BA1C391277004D1805 /* LoginViewController.h */,
+				961BB5BB1C391277004D1805 /* LoginViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		961BB5A81C3910D7004D1805 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		961BB5A91C3910D7004D1805 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5AA1C3910D7004D1805 /* Common */,
+				961BB5AB1C3910D7004D1805 /* ViewController */,
+				961BB5AC1C3910D7004D1805 /* views */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		961BB5AA1C3910D7004D1805 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		961BB5AB1C3910D7004D1805 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				961BB5B41C391258004D1805 /* PlayViewController.h */,
+				961BB5B51C391258004D1805 /* PlayViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		961BB5AC1C3910D7004D1805 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +455,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961BB5BC1C391277004D1805 /* LoginViewController.m in Sources */,
 				961BB56C1C390F59004D1805 /* ViewController.m in Sources */,
+				961BB5B91C391266004D1805 /* DownloadViewController.m in Sources */,
+				961BB5BF1C3912BF004D1805 /* CustomViewController.m in Sources */,
 				961BB5691C390F59004D1805 /* AppDelegate.m in Sources */,
 				961BB5661C390F59004D1805 /* main.m in Sources */,
+				961BB5B61C391258004D1805 /* PlayViewController.m in Sources */,
+				961BB5B01C391153004D1805 /* FindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +688,7 @@
 				961BB5901C390F59004D1805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		961BB5911C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +697,7 @@
 				961BB5931C390F59004D1805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		961BB5941C390F59004D1805 /* Build configuration list for PBXNativeTarget "RedioProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +706,7 @@
 				961BB5961C390F59004D1805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
