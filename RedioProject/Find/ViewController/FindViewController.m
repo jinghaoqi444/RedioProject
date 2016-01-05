@@ -8,9 +8,14 @@
 
 #import "FindViewController.h"
 #import "MoreTableViewCell.h"
+#import "FindListeningListCell.h"
+#import "ClassifyTableViewCell.h"
 
 @interface FindViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    UIView *titleSubView;
+    MoreTableViewCell *newCell;
+}
 @end
 
 @implementation FindViewController
@@ -34,7 +39,7 @@
     searchButton.frame = CGRectMake(titleView.frame.size.width - 40, titleLabel.frame.origin.y, 30, 30);
     [titleView addSubview:searchButton];
     
-    UIView *titleSubView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(titleView.frame), self.view.frame.size.width, 35)];
+    titleSubView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(titleView.frame), self.view.frame.size.width, 35)];
     titleSubView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:titleSubView];
     
@@ -61,9 +66,11 @@
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(titleSubView.frame),self.view.frame.size.width, self.view.frame.size.height - 64 - titleSubView.frame.size.height - 48)];
     [self.view addSubview:scrollView];
     scrollView.backgroundColor = [UIColor grayColor];
-    scrollView.contentSize = CGSizeMake(self.view.frame.size.width* 10, 0);
+    scrollView.contentSize = CGSizeMake(self.view.frame.size.width* 5, 0);
     scrollView.userInteractionEnabled = YES;
     scrollView.bounces = NO;
+    
+    scrollView.pagingEnabled = YES;
     
     UITableView *groomTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,self.view.frame.size.width,scrollView.frame.size.height) style:UITableViewStyleGrouped];
     groomTableView.backgroundColor = [UIColor whiteColor];
@@ -71,42 +78,120 @@
     groomTableView.delegate = self;
     groomTableView.dataSource = self;
     [groomTableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"MoreCell"];
+    [groomTableView registerClass:[FindListeningListCell class] forCellReuseIdentifier:@"FindCell"];
     
+    UITableView *classifyTableView = [[UITableView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(groomTableView.frame),0,self.view.frame.size.width,scrollView.frame.size.height) style:UITableViewStyleGrouped];
+    classifyTableView.backgroundColor = [UIColor whiteColor];
+    [scrollView addSubview:classifyTableView];
+    classifyTableView.delegate = self;
+    classifyTableView.dataSource = self;
+    [classifyTableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"MoreCell"];
+    [classifyTableView registerClass:[FindListeningListCell class] forCellReuseIdentifier:@"FindCell"];
     
-//    UIScrollView *titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,titleSubView.frame.size.width, 150)];
-//    titleScrollView.backgroundColor = [UIColor whiteColor];
-//    titleScrollView.contentSize = CGSizeMake(titleScrollView.frame.size.width *9, 0);
-//    titleScrollView.userInteractionEnabled = YES;
-//    titleScrollView.bounces = NO;
-//    [scrollView addSubview:titleScrollView];
+    UITableView *broadcastTableView = [[UITableView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(classifyTableView.frame),0,self.view.frame.size.width,scrollView.frame.size.height) style:UITableViewStyleGrouped];
+    broadcastTableView.backgroundColor = [UIColor whiteColor];
+    [scrollView addSubview:broadcastTableView];
+    broadcastTableView.delegate = self;
+    broadcastTableView.dataSource = self;
+    [broadcastTableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"MoreCell"];
+    [broadcastTableView registerClass:[FindListeningListCell class] forCellReuseIdentifier:@"FindCell"];
+    
+    UITableView *listTableView = [[UITableView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(broadcastTableView.frame),0,self.view.frame.size.width,scrollView.frame.size.height) style:UITableViewStyleGrouped];
+    listTableView.backgroundColor = [UIColor whiteColor];
+    [scrollView addSubview:listTableView];
+    listTableView.delegate = self;
+    listTableView.dataSource = self;
+    [listTableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"MoreCell"];
+    [listTableView registerClass:[FindListeningListCell class] forCellReuseIdentifier:@"FindCell"];
+    
+    UITableView *anchorTableView = [[UITableView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(listTableView.frame),0,self.view.frame.size.width,scrollView.frame.size.height) style:UITableViewStyleGrouped];
+    anchorTableView.backgroundColor = [UIColor whiteColor];
+    [scrollView addSubview:anchorTableView];
+    anchorTableView.delegate = self;
+    anchorTableView.dataSource = self;
+    [anchorTableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:@"MoreCell"];
+    [anchorTableView registerClass:[FindListeningListCell class] forCellReuseIdentifier:@"FindCell"];
 }
-
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        
+        UIScrollView *titleScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,0,titleSubView.frame.size.width, 150)];
+        titleScrollView.backgroundColor = [UIColor whiteColor];
+        titleScrollView.contentSize = CGSizeMake(titleScrollView.frame.size.width *9, 0);
+        titleScrollView.userInteractionEnabled = YES;
+        titleScrollView.bounces = NO;
+        [tableView addSubview:titleScrollView];
+    }
+    return nil;
+}
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 17;
 }
-
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section ==2) {
-        return 2;
+    return 1;
+}
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section ==2)
+    {
+        FindListeningListCell *findCell = [tableView dequeueReusableCellWithIdentifier:@"FindCell" forIndexPath:indexPath];
+        findCell.backgroundColor = [UIColor greenColor];
+        
+        [findCell refreshCell:nil];
+        return findCell;
     }
-    if (section == 3) {
-        return 4;
+    if (indexPath.section ==3)
+    {
+        FindListeningListCell *findCell = [tableView dequeueReusableCellWithIdentifier:@"FindCell" forIndexPath:indexPath];
+        findCell.backgroundColor = [UIColor greenColor];
+        
+        [findCell refreshCell:nil];
+        return findCell;
+    }
+    
+   
+    else
+    {
+        MoreTableViewCell *moreCell = [tableView dequeueReusableCellWithIdentifier:@"MoreCell" forIndexPath:indexPath];
+        moreCell.backgroundColor = [UIColor blueColor];
+        [moreCell refreshCell:nil];
+        
+        return moreCell;
+    }
+    return nil;
+}
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section ==0) {
+        return 150;
     }
     else
     {
-        return 1;
+        return 0.1;
     }
 }
 
-- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    MoreTableViewCell *moreCell = [tableView dequeueReusableCellWithIdentifier:@"MoreCell" forIndexPath:indexPath];
-    moreCell.backgroundColor = [UIColor redColor];
-    return moreCell;
+    return 10;
 }
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section ==2) {
+        return 300;
+    }
+    if (indexPath.section ==3) {
+        return 600;
+    }
+    else
+    {
+        return 150;
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -10,4 +10,5 @@
 
 @interface MoreTableViewCell : UITableViewCell
 
+-(CGFloat) refreshCell:(NSDictionary *) dic;
 @end
